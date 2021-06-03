@@ -16,9 +16,9 @@
 .color{
 	color: #ededed;
 }
-.tamaño{
-	width: 2em;
-	height: 2em;
+.iconos{
+	font-size: 1.5em;
+	color: #ededed;
 }
 .tamaño1{
 	height: 29em; 
