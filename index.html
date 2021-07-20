@@ -7,224 +7,317 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-    <script src="https://kit.fontawesome.com/451131987b.js" crossorigin="anonymous"></script>
-    
     <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
-    
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap" rel="stylesheet">
-    
-    <link rel="icon" href="assets/imagenes/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/451131987b.js" crossorigin="anonymous"></script>
 
-    <title>Estudiantes de La Plata</title>
+    <title>Piedras Rojas</title>
   </head>
-  <body>
-   <header>
-     <div class="container-fluid fondo">
-
-      <div class="row">
-
-        <div class="col">
-
-          <nav class="navbar navbar-expand-lg navbar-light fondo">
-
-           <a class="navbar-brand padding" href="#">
-            <img src="assets/imagenes/logo-edelp.png" alt="" width="50" height="75">
-           </a>
-
-           <div class="col offset-md-6">
-
-            <ul class="navbar-nav mb-auto mb-2 mb-lg-0 letra">
-
-             <li class="nav-item">
-              <a class="nav-link" href="https://www.estudiantesdelaplata.com/el-club/">EL CLUB</a>
-             </li>
-
-             <li class="nav-item">
-              <a class="nav-link" href="https://www.estudiantesdelaplata.com/futbol/">FUTBOL</a>
-             </li>
-
-             <li class="nav-item">
-              <a class="nav-link" href="https://www.estudiantesdelaplata.com/deportes/">DEPORTES</a>
-             </li>
-
-             <li class="nav-item">
-              <a class="nav-link" href="https://www.estudiantesdelaplata.com/el-club/estadio/">ESTADIO</a>
-             </li>
-
-             <li class="nav-item">
-              <a class="nav-link" href="https://www.estudiantesdelaplata.com/socios/">SOCIOS</a>
-             </li>
-            </ul>
+  <body class="fondo">
+    <header class="fondo1">
+     <nav class="navbar navbar-expand-lg navbar-light">
+       <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <div class="navbar-nav ms-auto">
+             <a class="nav-link letra" href="">Inicio</a>
+             <a class="nav-link letra" href="">Departamentos</a>
+             <a class="nav-link letra" href="">Servicios</a>
+             <a class="nav-link letra" href="">Ubicacion</a>
+             <a class="nav-link letra" href="">Paisaje</a>
            </div>
-          </nav>
+         </div>
+       </div>
+     </nav>    
+   </header>
+    <section class="fondo2">
+      <div class="container marginlogo tamaño">
+        <div class="row">
+          <img src="assets/imagenes/foto1.png">
         </div>
       </div>
-     </div>
-     
-        
-   </header>
-   <setion>
-    	<div class="container mt-3">
-
-         <div class="row">
-
-          <div class="col-md-6 offset-md-3 letra">
-          	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-3 border texto">
+          <h3 class="centro padding2 letra">Complejo turistico Piedras Rojas</h3>
+            <h4 class="centro letra">Las Grutas-Rio Negro</h4>
+            <a class="nav-link block" href=""><i class="fab fa-facebook"></i></a>
+             <a class="nav-link block" href=""><i class="fab fa-instagram"></i></a>
+             <a class="nav-link block" href=""><i class="fab fa-whatsapp"></i></a>
+            <p class="centro padding2 letra">Piedras Rojas es un lugar para relajar en el medio de la naturaleza, alejado 3km de la ciudad. el complejo se ubica entre la ciudad de las grutas y el balñeario las coloradas.<br>
+            Estos departamentos son autosustentables, lo que quiere decir que contamos con paneles solares para proporcionar energia, 4 tanques de 1000L c/u para abastecer de agua y gas envasado.</p>
+        </div>
+      </div>
+    </div>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="card text-center mt-3 mb-3 fondo1">
+              <div class="card-body">
+                <h5 class="card-title color1 letra">CONSULTA DISPONIBILIDAD</h5>
+                <form>
+              <input class="input100"  type="text" name="nacimientotitular" placeholder="Fecha de ingreso" onclick="ocultarError();" onfocus="(this.type='date')" onblur="(this.type='text')">
+              <input class="input100"  type="text" name="nacimientotitular" placeholder="Fecha de egreso" onclick="ocultarError();" onfocus="(this.type='date')" onblur="(this.type='text')">
+              <input type="number" placeholder="cantidad de inquilinos" required="" name="">
+              <input type="number" placeholder="numero de telefono" required="" name=""> 
+              <input type="email" placeholder="email" name="">
+              <input type="submit" value="confirmar" name="">
+            </form>
               </div>
-             <div class="carousel-inner ">
-              <div class="carousel-item active">
-               <img src="assets/imagenes/diapo-1.jpg" class="d-block w-100" alt="...">
-               <div class="carousel-caption d-none d-md-block">
-                 <h5 class="color fondo letra">Victoria ante Arsenal en UNO</h5>
-               </div>
-              </div>
-              <div class="carousel-item">
-               <img src="assets/imagenes/diapo-2.jpeg" class="d-block w-100" alt="...">
-               <div class="carousel-caption d-none d-md-block">
-                 <h5 class="color fondo letra">Certificación IRAM para el Country Club</h5>
-               </div>
-              </div>
-              <div class="carousel-item">
-               <img src="assets/imagenes/diapo-3.jpg" class="d-block w-100" alt="...">
-               <div class="carousel-caption d-none d-md-block">
-                 <h5 class="color fondo letra">Verón, presente en la sexta jornada de Gestión y Deporte</h5>
-               </div>
-              </div>
-             </div>
-             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Previous</span>
-             </button>
-             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-               <span class="visually-hidden">Next</span>
-             </button>
             </div>
           </div>
-        
-
-      </div>
-      
-
-    </div>
-
-    <div class="container mt-3">
-
-    	<div class="row">
-
-    		<div class="col-md-3 fondo">
-    			<div class="card tamaño1 m-2 fondo1">
-                 <i class="fas fa-book p-3"></i>
-                 <div class="card-body">
-                  <h5 class="card-title letra">HISTORIA</h5>
-                  <p class="card-text letra">El Club Estudiantes de La Plata nació bajo la cultura del trabajo, del esfuerzo y del 
-                  sacrificio individual en pos del bien colectivo. Es la identidad que lo atraviesa, que 
-                  lo forja y que le da la voluntad necesaria para creer en utopías. Así lo marca su 
-                  historia, desde la fundación hasta la actualidad.</p>
-                 </div>
-                </div>
-    		</div>
-    		<div class="col-md-3 fondo">
-    		   <div class="card tamaño1 m-2 fondo1">
-                <i class="fas fa-hotel p-3"></i>
-                <div class="card-body">
-                 <h5 class="card-title letra">MUSEO</h5>
-                 <p class="card-text letra">La Subcomisión de Museo del Club Estudiantes de La Plata nace oficialmente en 
-                 diciembre de 2013 de la propuesta de un grupo de socios e historiadores de la 
-                 necesidad de difusión de su vida social y deportiva y de la urgente preservación 
-                 de su acervo cultural y patrimonial.</p>
-                </div>
-               </div>
-
-    		</div>
-    		<div class="col-md-3 fondo">
-    		  <div class="card tamaño1 m-2 fondo1">
-               <i class="fas fa-people-carry p-3"></i>
-               <div class="card-body">
-                <h5 class="card-title letra">FUNDACION</h5>
-                <p class="card-text letra">La Fundación Estudiantes gira en torno de trabajar en forma conjunta con socios, 
-                hinchas y deportistas para hacer de Estudiantes de La Plata un club mas inclusivo 
-                y comprometido con las distintas problemáticas sociales del país; atendiendo a las 
-                necesidades de los sectores vulnerables desde el aspecto social, cultural y 
-                deportivo.</p>
-               </div>
-              </div>
-
-    		</div>
-    		<div class="col-md-3 fondo">
-    			<div class="card tamaño1 m-2 fondo1">
-                 <i class="fas fa-dna p-3"></i>
-                 <div class="card-body">
-                  <h5 class="card-title letra">ADN</h5>
-                  <p class="card-text letra">El ADN es nuestra escuela la que define nuestros valores, el mismo que nos otorga 
-                  sentido de pertenencia; es nuestra huella y nuestro legado.
-                  El ADN es mística que forja nuestra personalidad: nos impulsa a creer en utopías y 
-                  en la voluntad para alcanzarlas, sobrepasando los límites establecidos.
-                  El ADN es nuestra identidad y lo que nos une como familia.</p>
-                 </div>
-                </div>
-
-    		</div>
-    		
-
-    	</div>
-    	
-    </div>
-
-   </setion>
-   <footer>
-
-   	<div class="container mt-3">
-
-
-      <div class="row fondo2">
-
-
-        <div class="col-md-5 m-3">
-          <h5 class="color">TIENDA OFICIAL DEL CLUB</h5>
-          <a href="https://www.tiendapincha.com/">
-            <img src="assets/imagenes/tiendapincha.jpg" class="img-thumbnail" alt="...">
-          </a>
-          
         </div>
-
-        <div class="col-md-6 mt-3">
-          <h5 class="color margin">REDES SOCIALES</h5>
-          <a href=" https://www.instagram.com/edelpoficial/">
-            <i class="fab fa-instagram iconos margin"></i>
-          </a>
-          <a href="https://www.facebook.com/EdelpOficial/">
-            <i class="fab fa-facebook-f iconos margin"></i>
-          </a>
-          <a href=" https://twitter.com/edelpoficial">
-            <i class="fab fa-twitter iconos margin"></i>
-          </a>
-          <a href=" https://www.youtube.com/edelpoficial">
-            <i class="fab fa-youtube iconos margin"></i>
-          </a>
-        </div>
-        
-
       </div>
-      
-
+      </section>
+      <section>
+      <div class="container-fluid arriba">
+        <div class="card-group">
+  <div class="card">
+    <img src="assets/imagenes/departamento4.jpg" class="card-img-top" alt="...">
+    <div class="card-body fondo1">
+      <h5 class="card-title">Departamento 4 personas</h5>
+      <p class="card-text">Cuenta con cocina comedor donde hay un divan de 2 colchones individuales. <br>
+      Tambien tiene un habitacion privada con cama matrimonial, un baño y un patio privado con parrilla y vista al mar</p>
     </div>
-   </footer>
+  </div>
+  <div class="card">
+    <img src="assets/imagenes/plantaalta.jpg" class="card-img-top" alt="...">
+    <div class="card-body fondo1">
+      <h5 class="card-title">Departamento 5 personas (planta alta)</h5>
+      <p class="card-text">Tiene una cocina comedor con un sillon cama para una persona. <br>
+      Tiene 2 habitaciones, una matrimonial y otra con 2 camas individuales, balcon con vista al mar y patio en la planta baja con parrilla</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="assets/imagenes/departamentopb.jpg" class="card-img-top" alt="...">
+    <div class="card-body fondo1">
+      <h5 class="card-title">Departamento 6 personas (planta baja)</h5>
+      <p class="card-text">Este departamento al igual que el de planta alta cuenta con un divan de 2 colchones individuales en el comedor. <br>
+      Tiene 2 habitaciones, una matrimonial y otra con 2 camas individuales, una galeria y un patio privado</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container arriba">
+       <div class="row">
+         <div class="col col-md-6 border fondo1" align="center" >
+           <h3>¿Como llegar?</h3>
+           <p>Piedras Rojas esta ubicado entre la ciudad de las grutas y el balneario las coloradas, Pasando 1000 metros la zona de los pulperos por calle Sierra Palleman ingresamos al loteo horizonte azul. <br>
+           A 300 metros tenemos una bajada natural al mar, el complejo esta ubicado en una zona agreste por lo que los servicios son puestos por nosotros, contamos con 4 tanques de agua para abastecer de agua, gas envasado y energia provenientes de paneles solares y turbina eolica
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4913.782675993066!2d-65.11710601450312!3d-40.82734697144681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95fbcd22088bc94b%3A0x3b49919b22c9f49e!2sAlojamiento%20Piedras%20Rojas!5e1!3m2!1ses!2sar!4v1626562063906!5m2!1ses!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+         </div>
+         <div class="col col-md-6">
+           <img src="assets/imagenes/mapa.jpg">
+         </div>
+       </div>
+     </div>
+<div class="container">
+      <table class="table arriba">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">SERVICIOS</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row color"><i class="fas fa-wifi"></i></th>
+            <td>Internet</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><i class="fas fa-car"></i></th>
+            <td>Estacionamiento</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Parrillas</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Horno de barro</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><i class="far fa-lightbulb"></i></th>
+            <td>Energia solar y eolica</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><i class="fas fa-tint"></i></th>
+            <td>Agua de tanque</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><i class="fab fa-hotjar"></i></th>
+            <td>Gas envasado</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><i class="fas fa-tree"></i></th>
+            <td>Patio privado para cada departamento</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row"><i class="fas fa-tv"></i></th>
+            <td>Television</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+     </table>
+     </div>
+     <div class="container">
+       <div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="assets/imagenes/departamento4.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="assets/imagenes/foto5.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/imagenes/lejos.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="assets/imagenes/paisaje.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/imagenes/departamentopb.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+    <img
+      src="assets/imagenes/habitacion.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/imagenes/patio2.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="assets/imagenes/foto4.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/imagenes/foto.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="assets/imagenes/foto3.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="assets/imagenes/flores.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+
+    <img
+      src="assets/imagenes/atardecer.jpg"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt=""
+    />
+  </div>
+</div>
+     </div>
 
 
-   
+     <!-- Gallery -->
+
+<!-- Gallery -->
+
+    </section>
+    <footer>
+      <div class="container-fluid fondo1">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>REDES SOCIALES</h5>
+          </div>
+          <div class="col-md-6">
+            <h5>CONTACTO</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <a class="nav-link block" href=""><i class="fab fa-facebook"> FACEBOOK</i></a>
+          </div>
+          <div class="col-md-6">
+            <a class="nav-link block" href=""><i class="fab fa-whatsapp"> +54 2984 582600</i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <a class="nav-link block" href=""><i class="fab fa-instagram"> INSTAGRAM</i></a>
+          </div>
+          <div class="col-md-6">
+            <a class="nav-link block" href=""><i class="far fa-envelope"> doraclorinda@gmail.com</i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            
+          </div>
+          <div class="col-md-6">
+            
+          </div>
+        </div>
+      </div>
+
+
+    </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-
-
 
   </body>
 </html>
